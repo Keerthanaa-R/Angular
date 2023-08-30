@@ -1,0 +1,35 @@
+<h1>Submit Account Details</h1>
+<hr />
+<div class="container">
+    <form (ngSubmit)="getAccountDetails()">
+        <tr>
+            <td><label>Account Id</label></td>
+            <td><input type="text" [(ngModel)]="account.accountid" name="accountid" /></td>
+        </tr>
+        <tr>
+            <td><label>User Name</label></td>
+            <td> <input type="text" [(ngModel)]="account.username" name="username" /></td>
+        </tr>
+        <tr>
+            <td><label>Mail Id</label></td>
+            <td><input type="text" [(ngModel)]="account.mailid" name="mailid" /></td>
+        </tr>
+        <tr>
+            <td><label>Mobile No</label></td>
+            <td><input type="text" [(ngModel)]="account.mobileno" name="mobileno" /></td>
+        </tr>
+        <tr>
+            <td> <label>Account Type</label></td>
+            <td><input type="text" [(ngModel)]="account.accounttype" name="accounttype" /></td>
+        </tr>
+        <tr>
+            <td><label>Account Balance</label></td>
+            <td><input type="text" [(ngModel)]="account.accountbalance" name="accountbalance" /></td>
+        </tr>
+        <tr>
+            <td><label>Password</label></td>
+            <td><input type="text" [(ngModel)]="account.password" name="password" /></td>
+        </tr>
+        <button type="submit">Submit</button>
+    </form>
+</div>

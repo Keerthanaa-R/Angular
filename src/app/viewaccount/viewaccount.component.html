@@ -1,0 +1,37 @@
+<button onclick="window.location.href='http://localhost:4200/viewaccount';" class="btn btn-info">Refresh</button>&nbsp;&nbsp;&nbsp;
+<button onclick="window.location.href='http://localhost:4200/home';" class="btn btn-info">Logout</button>&nbsp;&nbsp;&nbsp;
+<a href="Addaccount" class="btn btn-primary">Add Account</a>&nbsp;&nbsp;&nbsp;
+<a href="viewUser" class="btn btn-dark">View User</a>
+<div class="container">
+    <table class="table table-striped">
+        <tr>
+            <th>ACCOUNT ID</th>
+            <th>USERNAME</th>
+            <th>MAIL ID</th>
+            <th>MOBILE NO</th>
+            <th>ACCOUNT TYPE</th>
+            <th>ACCOUNT BALANCE</th>
+            <th>PASSWORD</th>
+            <th>UPDATE</th>
+            <th>DELETE</th>
+        </tr>
+        <tr *ngFor="let a of account">
+            <td>{{a.accountid}}</td>
+            <td>{{a.username}}</td>
+            <td>{{a.mailid}}</td>
+            <td>{{a.mobileno}}</td>
+            <td>{{a.accounttype}}</td>
+            <td>{{a.accountbalance}}</td>
+            <td>{{a.password}}</td>
+            <td>
+                <a href="updateAccount/{{a.accountid}}/{{a.username}}/{{a.mailid}}/{{a.mobileno}}/{{a.accounttype}}/{{a.accountbalance}}/{{a.password}}"
+                    class="btn btn-primary">Update</a>
+            </td>
+            <td>
+                <a href="deleteAccount/{{a.accountid}}" class="btn btn-danger">Delete</a>
+            </td>
+
+
+        </tr>
+    </table>
+</div>

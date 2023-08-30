@@ -1,0 +1,9 @@
+<div class="container">
+    <form (ngSubmit)="viewSingleUserDetails()">
+        <tr>
+            <td><label>AccountID</label></td>
+            <td><input type="text" [(ngModel)]="account.accountid" name="accountid"/></td>
+        </tr>
+        <button type="Submit">View</button>
+    </form>
+</div>

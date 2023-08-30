@@ -1,0 +1,18 @@
+<h1>Enter Your Amount</h1>
+<div class="container">
+    <form (ngSubmit)="transferAmount()">
+        <tr>
+            <td><label>AccountId</label></td>
+            <td><input type="text" [(ngModel)]="accountid" name="accountid"></td>
+        </tr>
+        <tr>
+            <td><label>Amount</label></td>
+            <td><input type="text" [(ngModel)]="amount" name="amount"></td>
+        </tr>
+        <tr>
+            <td><label>UserName</label></td>
+            <td><input type="text" [(ngModel)]="username" name="username"></td>
+        </tr>
+        <button type="submit">Transfer</button>
+    </form>
+</div>

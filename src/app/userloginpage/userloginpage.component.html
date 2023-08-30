@@ -1,0 +1,20 @@
+<div class="imgcontainer">
+    <img src="assets/user.png" alt="Avatar" class="avatar">
+</div>
+<hr />
+<div class="container">
+    <form (ngSubmit)="checkLogin()">
+        <tr>
+            <td><label> Username</label></td>
+            <td><input type="text" [(ngModel)]="user.username" name="username" /></td>
+        </tr>
+        <tr>
+            <td><label>Password</label></td>
+            <td><input type="password" [(ngModel)]="user.password" name="password" /></td>
+        </tr>
+
+
+        <button type="submit">Login</button>
+    </form>
+
+</div>

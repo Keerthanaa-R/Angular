@@ -1,0 +1,23 @@
+<button onclick="window.location.href='http://localhost:4200/viewaccount';" class="btn btn-primary">Back</button>
+<div class="container">
+
+    <table class="table table-striped">
+        <tr>
+            <th>UID</th>
+            <th>ACCOUNTID</th>
+            <th>USERNAME</th>
+            <th>PASSWORD</th>
+            <th>DELETE</th>
+        </tr>
+        <tr *ngFor="let u of user">
+            <td>{{u.uid}}</td>
+            <td>{{u.accountid}}</td>
+            <td>{{u.username}}</td>
+            <td>{{u.password}}</td>
+
+            <td>
+                <a href="deleteUser/{{u.uid}}" class="btn btn-danger">Delete</a>
+            </td>
+        </tr>
+    </table>
+</div>
